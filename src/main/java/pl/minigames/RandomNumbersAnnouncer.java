@@ -1,10 +1,19 @@
 package pl.minigames;
 
-public class RandomNumbersAnnouncer {
+import java.util.Set;
 
-    private final RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
+class RandomNumbersAnnouncer {
 
-    String numberAnnnouncer(String message) {
-        return message + randomNumberGenerator.randomNumbers;
+    RandomNumberGenerator randomNumberGenerator;
+
+    public RandomNumbersAnnouncer(RandomNumberGenerator randomNumberGenerator) {
+        this.randomNumberGenerator = randomNumberGenerator;
+
+    }
+
+
+
+    public String numberAnnnouncer(String message, Set<Integer> randomNumbers) {
+        return message + randomNumberGenerator.generateRandom();
     }
 }

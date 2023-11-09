@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-public class RandomNumberGenerator {
+class RandomNumberGenerator {
 
     private final int MIN_VALUE=1;
     private final int MAX_VALUE=99;
@@ -16,6 +16,9 @@ public class RandomNumberGenerator {
         {
             randomNumbers.add(random.nextInt(MAX_VALUE-MIN_VALUE)+1);
         }
+
         return randomNumbers;
     }
+
+
 }
