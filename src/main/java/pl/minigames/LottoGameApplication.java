@@ -16,6 +16,6 @@ public class LottoGameApplication {
 
         System.out.println("Twoje liczby to: "+lottoNumbers.numbersFromUser);
     }
-
+//sssdasdsadasdas
 
 }
