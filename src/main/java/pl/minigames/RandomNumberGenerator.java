@@ -21,4 +21,7 @@ class RandomNumberGenerator {
     }
 
 
+    public Set<Integer> getRandomNumbers() {
+        return randomNumbers;
+    }
 }

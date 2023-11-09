@@ -12,8 +12,7 @@ class RandomNumbersAnnouncer {
     }
 
 
-
     public String numberAnnnouncer(String message, Set<Integer> randomNumbers) {
-        return message + randomNumberGenerator.generateRandom();
+        return message + randomNumbers;
     }
 }
