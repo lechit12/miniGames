@@ -6,7 +6,6 @@ import java.util.Set;
 
 class LottoNumbersGetter {
 
-    private int number;
     private final Scanner scanner;
 
     final Set<Integer> numbersFromUser;
@@ -20,7 +19,7 @@ class LottoNumbersGetter {
     Set<Integer> numbersFromUser() {
         System.out.println("Podaj 6 liczb od 1-99");
         for (int i = 0; i < 6; i++) {
-            number = scanner.nextInt();
+            int number = scanner.nextInt();
             numbersFromUser.add(number);
         }
         return numbersFromUser;

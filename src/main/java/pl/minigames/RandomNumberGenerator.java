@@ -9,7 +9,7 @@ class RandomNumberGenerator {
     private final int MIN_VALUE = 1;
     private final int MAX_VALUE = 99;
 
-    Set<Integer> randomNumbers = new HashSet<>();
+    private final Set<Integer> randomNumbers = new HashSet<>();
 
     Set<Integer> generateRandom() {
         Random random = new Random();
