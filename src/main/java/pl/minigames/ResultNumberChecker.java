@@ -1,13 +1,20 @@
 package pl.minigames;
 
+import java.util.Set;
+
 class ResultNumberChecker {
 
-    RandomNumberGenerator randomNumber=new RandomNumberGenerator();
-    UserNumberResult userNumbers= new UserNumberResult();
-    String isWinner(String message){
+    RandomNumberGenerator randomNumber;
+    LottoNumbersGetter userNumbers;
 
+    public ResultNumberChecker(RandomNumberGenerator randomNumber, LottoNumbersGetter userNumbers) {
+        this.randomNumber = randomNumber;
+        this.userNumbers = userNumbers;
+    }
 
-        return message;
+    boolean isWinner(Set<Integer> randomNumbers,Set<Integer> userNumbers){
+
+        return randomNumbers.equals(userNumbers);
     }
 
 }

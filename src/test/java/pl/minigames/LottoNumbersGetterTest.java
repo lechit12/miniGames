@@ -2,6 +2,8 @@ package pl.minigames;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -13,7 +15,7 @@ class LottoNumbersGetterTest {
     public void should_return_6_numbers_taken_from_user()
     {
         //given
-        LottoNumbersGetter lottoNumbersGetter = new LottoNumbersGetter();
+        LottoNumbersGetter lottoNumbersGetter = new LottoNumbersGetter(new Scanner(System.in),new HashSet<>());
         Set<Integer> numbers=lottoNumbersGetter.numbersFromUser;
         numbers.add(1);
         numbers.add(2);

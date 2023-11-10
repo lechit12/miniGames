@@ -10,9 +10,9 @@ class LottoNumbersGetter {
 
     final Set<Integer> numbersFromUser;
 
-    public LottoNumbersGetter() {
-        this.scanner = new Scanner(System.in);
-        this.numbersFromUser = new HashSet<>();
+    public LottoNumbersGetter(Scanner scanner, Set<Integer> numbersFromUser) {
+        this.scanner = scanner;
+        this.numbersFromUser = numbersFromUser;
     }
 
 
@@ -25,8 +25,4 @@ class LottoNumbersGetter {
         return numbersFromUser;
     }
 
-
-    public Set<Integer> getNumbersFromUser() {
-        return numbersFromUser;
-    }
 }

@@ -2,17 +2,17 @@ package pl.minigames;
 
 import java.util.Set;
 
-class RandomNumbersAnnouncer {
+class RandomNumbersAnnouncer implements Informable{
 
-    RandomNumberGenerator randomNumberGenerator;
+    private final RandomNumberGenerator randomNumberGenerator;
 
     public RandomNumbersAnnouncer(RandomNumberGenerator randomNumberGenerator) {
         this.randomNumberGenerator = randomNumberGenerator;
 
     }
 
-
-    public String numberAnnnouncer(String message, Set<Integer> randomNumbers) {
+    @Override
+    public String showMessage(String message, Set<Integer> randomNumbers) {
         return message + randomNumbers;
     }
 }
