@@ -1,7 +1,6 @@
 package pl.minigames;
 
 import java.security.SecureRandom;
-import java.util.HashSet;
 import java.util.Set;
 
 class RandomNumberGenerator implements RandomGenerable{
