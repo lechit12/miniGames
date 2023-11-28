@@ -17,12 +17,26 @@ class LottoNumbersGetter {
 
 
     Set<Integer> numbersFromUser() {
+
         System.out.println("Podaj 6 liczb od 1-99");
-        for (int i = 0; i < 6; i++) {
-            int number = scanner.nextInt();
-            numbersFromUser.add(number);
-        }
-        return numbersFromUser;
+
+            while(numbersFromUser.size()<6)
+            {
+                int number = scanner.nextInt();
+                if(number<1 || number >99)
+                {
+                    System.out.println("Liczba powinna być w zakresie 1-99");
+                    continue;
+                }
+                if (numbersFromUser.contains(number))
+                {
+                    System.out.println("Liczba nie moze sie powtarzać");
+                    continue;
+                }
+                numbersFromUser.add(number);
+            }
+            return numbersFromUser;
+
     }
 
 }

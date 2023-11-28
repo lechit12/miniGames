@@ -18,9 +18,10 @@ class RandomNumberGenerator implements RandomGenerable{
     @Override
     public Set<Integer> generateRandom() {
 
-        for (int i = 0; i < 6; i++) {
+        do {
             randomNumbers.add(random.nextInt(MAX_VALUE - MIN_VALUE) + 1);
         }
+        while (randomNumbers.size()!=6);
 
         return randomNumbers;
     }
