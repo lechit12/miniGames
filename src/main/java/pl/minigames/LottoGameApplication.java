@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class LottoGameApplication {
+
     public static void main(String[] args) {
 
         LottoNumbersGetter lottoNumbers = new LottoNumbersGetter(new Scanner(System.in),new HashSet<>());
@@ -18,7 +19,8 @@ public class LottoGameApplication {
          Set<Integer> userNumbers = lottoNumbers.numbersFromUser();
         System.out.println(randomNumbersAnnouncer.showMessage("Wylosowane liczby to: ", randomNumbers) + userNumbersAnnouncer.showMessage(". Twoje liczby to: ",userNumbers));
         boolean arenumbersEqual = resultNumberChecker.isWinner(randomNumbers,userNumbers);
-        System.out.println(winningAnnouncer.isWinner(arenumbersEqual));
+        String announce = winningAnnouncer.isWinner(arenumbersEqual);
+        System.out.println(announce);
 
 
     }

@@ -8,10 +8,10 @@ public class WinningAnnouncer  {
     public String isWinner(boolean arenumbersEqual) {
         if (arenumbersEqual)
         {
-            return "Wygrałeś!";
+            return " Wygrałeś!";
         }
         else {
-            return "Spróbuj innym razem.";
+            return " Spróbuj innym razem.";
         }
     }
 }

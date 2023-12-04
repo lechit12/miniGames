@@ -22,7 +22,7 @@ class WinningAnnouncerTest {
         //when
         boolean areNumbersEqual = numbers1.equals(numbers2);
         String response = winningAnnouncer.isWinner(areNumbersEqual);
-        assertTrue(response.equals("Wygrałeś!"));
+        assertTrue(response.equals(" Wygrałeś!"));
     }
     @Test
     public void should_return_not_winner_result()
@@ -34,7 +34,7 @@ class WinningAnnouncerTest {
         //when
         boolean areNumbersEqual = numbers1.equals(numbers2);
         String response = winningAnnouncer.isWinner(areNumbersEqual);
-        assertTrue(response.equals("Spróbuj innym razem."));
+        assertTrue(response.equals(" Spróbuj innym razem."));
     }
 
 
