@@ -21,6 +21,7 @@ public class Scan {
 
         return scanner;
     }
+
     Scanner mockScannerIn(Set<Integer> data) {
         StringBuilder stringBuilder = new StringBuilder();
         for (Integer number : data) {

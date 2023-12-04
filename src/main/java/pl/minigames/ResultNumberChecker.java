@@ -12,7 +12,7 @@ class ResultNumberChecker {
         this.userNumbers = userNumbers;
     }
 
-    boolean isWinner(Set<Integer> randomNumbers,Set<Integer> userNumbers){
+    boolean isWinner(Set<Integer> randomNumbers, Set<Integer> userNumbers) {
 
         return randomNumbers.equals(userNumbers);
     }

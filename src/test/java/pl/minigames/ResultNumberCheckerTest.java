@@ -5,10 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.security.SecureRandom;
 import java.util.*;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 class ResultNumberCheckerTest extends Scan {
 
@@ -27,6 +25,7 @@ class ResultNumberCheckerTest extends Scan {
         // then
         assertTrue(response, "Should return true when all user numbers are present in the random numbers set.");
     }
+
     @Test
     public void should_return_false_when_user_is_not_winner() {
         // given

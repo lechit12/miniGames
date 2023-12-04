@@ -2,7 +2,7 @@ package pl.minigames;
 
 import java.util.Set;
 
-class RandomNumbersAnnouncer implements Informable{
+class RandomNumbersAnnouncer implements Informable {
 
     private final RandomNumberGenerator randomNumberGenerator;
 

@@ -3,7 +3,7 @@ package pl.minigames;
 import java.security.SecureRandom;
 import java.util.Set;
 
-class RandomNumberGenerator implements RandomGenerable{
+class RandomNumberGenerator implements RandomGenerable {
 
     private final int MIN_VALUE = 1;
     private final int MAX_VALUE = 99;
@@ -21,7 +21,7 @@ class RandomNumberGenerator implements RandomGenerable{
         do {
             randomNumbers.add(random.nextInt(MAX_VALUE - MIN_VALUE) + 1);
         }
-        while (randomNumbers.size()!=6);
+        while (randomNumbers.size() != 6);
 
         return randomNumbers;
     }
