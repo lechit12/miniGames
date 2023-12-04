@@ -1,19 +1,15 @@
 package pl.minigames;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Set;
 
+@AllArgsConstructor
 class ResultNumberChecker {
-
-    RandomNumberGenerator randomNumber;
-    LottoNumbersGetter userNumbers;
-
-    public ResultNumberChecker(RandomNumberGenerator randomNumber, LottoNumbersGetter userNumbers) {
-        this.randomNumber = randomNumber;
-        this.userNumbers = userNumbers;
-    }
+    private final RandomNumberGenerator randomNumber;
+    private final LottoNumbersGetter userNumbers;
 
     boolean isWinner(Set<Integer> randomNumbers, Set<Integer> userNumbers) {
-
         return randomNumbers.equals(userNumbers);
     }
 

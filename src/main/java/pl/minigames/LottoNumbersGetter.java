@@ -1,19 +1,17 @@
 package pl.minigames;
 
 
+import lombok.AllArgsConstructor;
+
 import java.util.Scanner;
 import java.util.Set;
 
+@AllArgsConstructor
 class LottoNumbersGetter {
 
     private final Scanner scanner;
 
     final Set<Integer> numbersFromUser;
-
-    public LottoNumbersGetter(Scanner scanner, Set<Integer> numbersFromUser) {
-        this.scanner = scanner;
-        this.numbersFromUser = numbersFromUser;
-    }
 
 
     Set<Integer> numbersFromUser() {

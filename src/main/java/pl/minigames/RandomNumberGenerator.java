@@ -1,8 +1,11 @@
 package pl.minigames;
 
+import lombok.AllArgsConstructor;
+
 import java.security.SecureRandom;
 import java.util.Set;
 
+@AllArgsConstructor
 class RandomNumberGenerator implements RandomGenerable {
 
     private final int MIN_VALUE = 1;
@@ -10,14 +13,8 @@ class RandomNumberGenerator implements RandomGenerable {
     private final SecureRandom random;
     private final Set<Integer> randomNumbers;
 
-    public RandomNumberGenerator(SecureRandom random, Set<Integer> randomNumbers) {
-        this.random = random;
-        this.randomNumbers = randomNumbers;
-    }
-
     @Override
     public Set<Integer> generateRandom() {
-
         do {
             randomNumbers.add(random.nextInt(MAX_VALUE - MIN_VALUE) + 1);
         }

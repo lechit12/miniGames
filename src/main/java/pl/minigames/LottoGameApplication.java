@@ -22,7 +22,6 @@ public class LottoGameApplication {
         String announce = winningAnnouncer.isWinner(arenumbersEqual);
         System.out.println(announce);
 
-
     }
 
 }
